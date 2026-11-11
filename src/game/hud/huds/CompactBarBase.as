@@ -1,0 +1,29 @@
+package src.game.hud.huds 
+{
+	import flash.text.TextField;
+	import src.game.hud.HudComponent;
+	
+	/**
+	 * ...
+	 * @author 
+	 */
+	public class CompactBarBase extends HudComponent 
+	{
+		public var txtName:TextField;
+		
+		public function CompactBarBase() 
+		{
+			super();
+			
+		}
+		
+		override public function destroy():void 
+		{
+			txtName = null;
+			
+			super.destroy();
+		}
+		
+	}
+
+}
