@@ -1,27 +1,35 @@
 # Learn to Fly 3: source code
 
-The ActionScript 3 code of Learn to Fly 3, the Steam version.
+![Learn to Fly 3 cover art](docs/capsule.jpg)
 
-This is an edited snapshot of the Flash source. We removed platform integrations and cleaned up the scripts that called them. The gameplay guides on `main` point to the retained mechanics and formulas.
+ActionScript 3 source for Learn to Fly 3 version 1.2.13 (Steam build 2826715). Most of the code is in separate ActionScript classes. A smaller set of frame scripts inside Flash movie clips handles loading, interface elements, and animation.
 
-This is for reading, not building. The art, sound, Flash project file and third-party libraries aren't included.
+This is an edited snapshot of the Flash source. We removed platform integrations and cleaned up the scripts that called them. The gameplay guides point to the retained mechanics and formulas.
 
-## Versions
+## Mechanics
 
-1. `main`: the latest version.
-2. Tag [`2018-steam-release`](../../tree/2018-steam-release): the 2018 Steam release.
+The notes follow a flight from launch through stage and boost use to cash payout. They also cover equipment stats by level, upgrades, and game modes.
 
-Both snapshots report `1.2.13`. Gameplay differs, so cite the tag or commit when comparing speedrun results. [Compare them](../../compare/2018-steam-release...main).
+1. [Flight and payouts](docs/mechanics.md)
+2. [Equipment stats](docs/items.md) and [level curves](docs/item-levels.md)
+3. [Upgrades and Bonus Shop](docs/upgrades.md)
+4. [Progression and game modes](docs/progression.md)
+
+## Artwork renders
+
+[Preview](docs/art-renders/preview.png) · [Asset manifest](docs/art-renders/manifest.csv). The full pack contains transparent 256 × 256 and 1024 × 1024 PNGs in `learn-to-fly-3-art-renders.zip` for [Releases](../../releases).
 
 ## What's here
 
+This release is for reading the source. The original art files, sound, Flash project file and third-party libraries aren't included.
+
 1. `src/`: the game's classes. Most of the flight is in `src/game`, and item, upgrade and stat definitions are in `src/reg/Registry.as`.
 2. `scripts/`: the code that sat on timeline frames inside the Flash project file, one file per timeline. Each block starts with a comment saying which layer and frame it's on.
-3. `framework/lbg/`: Light Bringer Games' shared Flash library, which the game uses for logging, saving, anti-cheat values and more.
+3. `framework/lbg/`: Light Bringer Games' shared Flash utilities.
 
 Not included, since they aren't ours to relicense: Nape (physics), FRESteamWorks, as3corelib, as3crypto, and the other third-party Flash libraries the framework used.
 
-A few framework files are other people's code, and keep their own licenses: `CollisionDetection.as` (Grant Skinner, MIT), `MouseWheelTrap.as` (spikything.com, MIT), `Easing.as` (Robert Penner, BSD), and `BigInt.as` (Leemon Baird, ActionScript port by Ian Peters, public domain).
+Several framework files carry their own terms: `CollisionDetection.as` (Grant Skinner, MIT), `Easing.as` (Robert Penner, BSD), `BigInt.as` (Leemon Baird, ActionScript port by Ian Peters, public domain), and `MouseWheelTrap.as` (spikything.com, MIT).
 
 ## License
 
