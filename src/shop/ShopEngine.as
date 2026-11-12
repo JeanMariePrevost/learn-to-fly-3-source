@@ -80,7 +80,6 @@ package src.shop
 			
 			StatHooks.initHooks();
 			
-			//MyPlayFab.instance.login();
 			
 			_tutorial = new ShopTutorials();//Called first to verify if the shop has to change, like new features unlocked
 			

@@ -4,7 +4,7 @@
 
 ActionScript 3 source for Learn to Fly 3 version 1.2.13 (Steam build 2826715). Most of the code is in separate ActionScript classes. A smaller set of frame scripts inside Flash movie clips handles loading, interface elements, and animation.
 
-I used scripts, AI agents and some manual edits to remove platform integrations, clean up the scripts that called them, and put together the docs. The guides link to the code so you can check the details yourself.
+I used scripts, AI agents and some manual edits to remove payment and other platform code, clean up the scripts that called it, and put together the docs. Steam startup and overlay code are still included. The guides link to the code so you can check the details yourself.
 
 ## Mechanics
 
