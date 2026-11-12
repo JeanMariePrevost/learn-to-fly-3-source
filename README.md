@@ -4,7 +4,7 @@
 
 ActionScript 3 source for Learn to Fly 3 version 1.2.13 (Steam build 2826715). Most of the code is in separate ActionScript classes. A smaller set of frame scripts inside Flash movie clips handles loading, interface elements, and animation.
 
-This is an edited snapshot of the Flash source. We removed platform integrations and cleaned up the scripts that called them. The gameplay guides point to the retained mechanics and formulas.
+I used scripts, AI agents and some manual edits to remove platform integrations, clean up the scripts that called them, and put together the docs. The guides link to the code so you can check the details yourself.
 
 ## Mechanics
 
@@ -21,20 +21,20 @@ The notes follow a flight from launch through stage and boost use to cash payout
 
 ## What's here
 
-This release is for reading the source. The original art files, sound, Flash project file and third-party libraries aren't included.
+This release is for reading the source. I left out the original art files, sound, Flash project file and third-party libraries.
 
-1. `src/`: the game's classes. Most of the flight is in `src/game`, and item, upgrade and stat definitions are in `src/reg/Registry.as`.
-2. `scripts/`: the code that sat on timeline frames inside the Flash project file, one file per timeline. Each block starts with a comment saying which layer and frame it's on.
-3. `framework/lbg/`: Light Bringer Games' shared Flash utilities.
+1. `src/` holds the game's classes. Most of the flight code is in `src/game`. Item, upgrade and stat definitions are in `src/reg/Registry.as`.
+2. `scripts/` holds the code from the Flash timelines, one file per timeline. Each block starts with a comment naming its layer and frame.
+3. `framework/lbg/` holds Light Bringer Games' shared Flash utilities.
 
-Not included, since they aren't ours to relicense: Nape (physics), FRESteamWorks, as3corelib, as3crypto, and the other third-party Flash libraries the framework used.
+The game used Nape (physics), FRESteamWorks, as3corelib, as3crypto, and other third-party Flash libraries.
 
-Several framework files carry their own terms: `CollisionDetection.as` (Grant Skinner, MIT), `Easing.as` (Robert Penner, BSD), `BigInt.as` (Leemon Baird, ActionScript port by Ian Peters, public domain), and `MouseWheelTrap.as` (spikything.com, MIT).
+Several included framework files carry their own terms. `CollisionDetection.as` is by Grant Skinner (MIT), `Easing.as` is by Robert Penner (BSD), `BigInt.as` is by Leemon Baird with an ActionScript port by Ian Peters (public domain), and `MouseWheelTrap.as` is from spikything.com (MIT).
 
 ## License
 
-The [LBG-NCNC License v1.0](LICENSE.md) covers Light Bringer Games' source code in this repository.
+This project is licensed under the [LBG-NCNC License v1.0](LICENSE.md).
 
-You can read, use, change, and share the code for noncommercial purposes, including by forking it on GitHub. When sharing, credit Light Bringer Games and keep the license and copyright notices. Get written permission before distributing or hosting a product based on the code that competes with or undercuts a Light Bringer Games product or service, even if it's free. The full license governs.
+**Short version:** Do whatever, but give credit, don’t make money from it, don’t compete with me, and don’t hurt my business. (See the license for the actual terms.)
 
 Light Bringer Games reserves its rights in the game's name, art, and sound. Third-party files have their own licenses.
