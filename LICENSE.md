@@ -1,6 +1,6 @@
 # LBG-NCNC License v1.0
 
-*Light Bringer Games Non-Commercial No-Compete*
+*Light Bringer Games Non-Commercial Non-Compete*
 
 Copyright © 2026 Light Bringer Games
 
